@@ -1,0 +1,9 @@
+name: SupportChat
+author: Fabian996
+version: 1.0
+main: de.Fabian996.SupportChat.SupportChat
+
+commands:
+  support:
+    description: Support Command
+    aliases: [sup]
