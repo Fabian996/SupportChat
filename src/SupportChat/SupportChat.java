@@ -185,7 +185,7 @@ public class SupportChat extends JavaPlugin implements Listener{
 
 	      if (args.length == 1)
 	      {
-	        if (p.hasPermission("SupportChat.support"))
+	        if (p.hasPermission("SupportChat.support.list"))
 	        {
 	          if (args[0].equalsIgnoreCase("list")) {
 	            p.sendMessage(ChatColor.AQUA + "[]=====" + ChatColor.GOLD + "Support List" + ChatColor.AQUA + "=====[]");
@@ -197,7 +197,7 @@ public class SupportChat extends JavaPlugin implements Listener{
 	          }
 
 	          if (args[0].equalsIgnoreCase("reload")) {
-	            if (p.hasPermission("SupportChat.support"))
+	            if (p.hasPermission("SupportChat.support.reload"))
 	            {
 	              try {
 	                scfg.load(csfiel);
@@ -280,7 +280,7 @@ public class SupportChat extends JavaPlugin implements Listener{
 	      }
 
 	      if (args.length == 2) {
-	        if (p.hasPermission("SupportChat.Support")) {
+	        if (p.hasPermission("SupportChat.Support.kick")) {
 	          if (args[0].equalsIgnoreCase("kick")) {
 	            Player t = Bukkit.getServer().getPlayer(args[1].toLowerCase());
 	            if (this.support.contains(args[1].toLowerCase())) {
